@@ -21,7 +21,7 @@ async function startTest() {
     const minutes = parseInt(document.getElementById("timeLimit").value);
 
     // 👇 IMPORTANT: path must match your repo
-    const res = await fetch("questions-1.json");
+    const res = await fetch("questions-1.json?v=" + Date.now());
 
     if (!res.ok) {
       throw new Error("Questions file not found (HTTP " + res.status + ")");
@@ -103,5 +103,6 @@ function formatTime(sec) {
   const s = sec % 60;
   return `Time: ${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
+
 
 
