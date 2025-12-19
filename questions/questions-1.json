@@ -1,34 +1,604 @@
 {
   "questions": [
-    {
-      "id": "NS1",
-      "text": "Which of the following numbers is divisible by 9?",
-      "options": ["1234", "1111", "999", "1001"],
-      "answer": 2
-    },
-    {
-      "id": "NS2",
-      "text": "Find the remainder when 3^2025 is divided by 8.",
-      "options": ["1", "3", "5", "7"],
-      "answer": 1
-    },
-    {
-      "id": "NS3",
-      "text": "Which is the smallest prime number?",
-      "options": ["1", "2", "3", "5"],
-      "answer": 1
-    },
-    {
-      "id": "NS4",
-      "text": "LCM of 6 and 8 is:",
-      "options": ["12", "24", "48", "16"],
-      "answer": 1
-    },
-    {
-      "id": "NS5",
-      "text": "Which of the following is NOT a rational number?",
-      "options": ["0.25", "√2", "3/7", "−1"],
-      "answer": 1
-    }
+  {
+    "id": "NS1",
+    "text": "Every rational number is:",
+    "options": ["A natural number", "An integer", "A real number", "A whole number"],
+    "answer": 2
+  },
+  {
+    "id": "NS2",
+    "text": "Between two rational numbers:",
+    "options": ["There is no rational number", "There is exactly one rational number", "There are infinitely many rational numbers", "There are only irrational numbers"],
+    "answer": 2
+  },
+  {
+    "id": "NS3",
+    "text": "The value of 0.999... in the form p/q, where p and q are integers and q ≠ 0, is:",
+    "options": ["9/10", "1", "99/100", "8/9"],
+    "answer": 1
+  },
+  {
+    "id": "NS4",
+    "text": "The simplified value of (3 + √3)(3 - √3) is:",
+    "options": ["0", "6", "9", "3"],
+    "answer": 1
+  },
+  {
+    "id": "NS5",
+    "text": "If x = 2 + √3, then the value of x + 1/x is:",
+    "options": ["4", "2√3", "2", "0"],
+    "answer": 0
+  },
+  {
+    "id": "NS6",
+    "text": "The degree of a non-zero constant polynomial is:",
+    "options": ["0", "1", "Not defined", "Any natural number"],
+    "answer": 0
+  },
+  {
+    "id": "NS7",
+    "text": "If x + 1 is a factor of the polynomial 2x² + kx, then the value of k is:",
+    "options": ["-2", "-3", "2", "3"],
+    "answer": 2
+  },
+  {
+    "id": "NS8",
+    "text": "One of the factors of (25x² - 1) + (1 + 5x)² is:",
+    "options": ["5 + x", "5 - x", "10x", "10"],
+    "answer": 2
+  },
+  {
+    "id": "NS9",
+    "text": "The point (-3, 5) lies in which quadrant?",
+    "options": ["First", "Second", "Third", "Fourth"],
+    "answer": 1
+  },
+  {
+    "id": "NS10",
+    "text": "The point whose ordinate is 4 and which lies on y-axis is:",
+    "options": ["(4, 0)", "(0, 4)", "(1, 4)", "(4, 2)"],
+    "answer": 1
+  },
+  {
+    "id": "NS11",
+    "text": "Any point on the line y = x is of the form:",
+    "options": ["(a, a)", "(0, a)", "(a, 0)", "(a, -a)"],
+    "answer": 0
+  },
+  {
+    "id": "NS12",
+    "text": "The graph of the linear equation 2x + 3y = 6 cuts the y-axis at the point:",
+    "options": ["(2, 0)", "(0, 3)", "(3, 0)", "(0, 2)"],
+    "answer": 3
+  },
+  {
+    "id": "NS13",
+    "text": "Euclid stated that all right angles are equal to each other in the form of:",
+    "options": ["An axiom", "A definition", "A postulate", "A proof"],
+    "answer": 2
+  },
+  {
+    "id": "NS14",
+    "text": "If a ray stands on a line, then the sum of the two adjacent angles so formed is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": 1
+  },
+  {
+    "id": "NS15",
+    "text": "Two angles whose sum is 90° are called:",
+    "options": ["Supplementary", "Complementary", "Adjacent", "Vertical"],
+    "answer": 1
+  },
+  {
+    "id": "NS16",
+    "text": "If two interior angles on the same side of a transversal intersecting two parallel lines are in the ratio 2 : 3, then the greater angle is:",
+    "options": ["108°", "120°", "72°", "54°"],
+    "answer": 0
+  },
+  {
+    "id": "NS17",
+    "text": "In ΔABC, if ∠A = 40° and ∠B = 60°, then the longest side is:",
+    "options": ["AB", "BC", "AC", "None"],
+    "answer": 0
+  },
+  {
+    "id": "NS18",
+    "text": "It is given that ΔABC ≅ ΔFDE and AB = 5 cm, ∠B = 40° and ∠A = 80°. Then which of the following is true?",
+    "options": ["DF = 5 cm, ∠F = 60°", "DF = 5 cm, ∠E = 60°", "DE = 5 cm, ∠E = 60°", "DE = 5 cm, ∠D = 40°"],
+    "answer": 1
+  },
+  {
+    "id": "NS19",
+    "text": "Three angles of a quadrilateral are 75°, 90° and 75°. The fourth angle is:",
+    "options": ["90°", "95°", "105°", "120°"],
+    "answer": 3
+  },
+  {
+    "id": "NS20",
+    "text": "A quadrilateral whose all sides are equal and all angles are equal to 90° is a:",
+    "options": ["Rectangle", "Rhombus", "Square", "Parallelogram"],
+    "answer": 2
+  },
+  {
+    "id": "NS21",
+    "text": "The diagonals of a rhombus are 12 cm and 16 cm. The length of the side of the rhombus is:",
+    "options": ["10 cm", "14 cm", "12 cm", "8 cm"],
+    "answer": 0
+  },
+  {
+    "id": "NS22",
+    "text": "In a parallelogram ABCD, if ∠A = 115°, then ∠D is:",
+    "options": ["115°", "65°", "105°", "75°"],
+    "answer": 1
+  },
+  {
+    "id": "NS23",
+    "text": "The area of a triangle with base 4 cm and height 6 cm is:",
+    "options": ["24 cm²", "12 cm²", "10 cm²", "48 cm²"],
+    "answer": 1
+  },
+  {
+    "id": "NS24",
+    "text": "The area of an equilateral triangle with side 2√3 cm is:",
+    "options": ["3√3 cm²", "6 cm²", "9√3 cm²", "3 cm²"],
+    "answer": 0
+  },
+  {
+    "id": "NS25",
+    "text": "The semi-perimeter of a triangle with sides 13 cm, 14 cm and 15 cm is:",
+    "options": ["42 cm", "21 cm", "20 cm", "28 cm"],
+    "answer": 1
+  },
+  {
+    "id": "NS26",
+    "text": "The length of the chord which is at a distance of 3 cm from the centre of a circle of radius 5 cm is:",
+    "options": ["4 cm", "8 cm", "6 cm", "10 cm"],
+    "answer": 1
+  },
+  {
+    "id": "NS27",
+    "text": "An angle in a semi-circle is:",
+    "options": ["Acute", "Obtuse", "Right angle", "Reflex angle"],
+    "answer": 2
+  },
+  {
+    "id": "NS28",
+    "text": "If a triangle and a parallelogram are on the same base and between the same parallels, then the ratio of the area of the triangle to the area of parallelogram is:",
+    "options": ["1:1", "1:2", "2:1", "1:4"],
+    "answer": 1
+  },
+  {
+    "id": "NS29",
+    "text": "The collection of all points in a plane which are at a fixed distance from a fixed point in the plane is called a:",
+    "options": ["Sphere", "Circle", "Rectangle", "Segment"],
+    "answer": 1
+  },
+  {
+    "id": "NS30",
+    "text": "If ABC is an arc of a circle and ∠ABC = 135°, then the arc is a:",
+    "options": ["Semicircle", "Major arc", "Minor arc", "Circle"],
+    "answer": 1
+  },
+  {
+    "id": "NS31",
+    "text": "The total surface area of a cube is 96 cm². The volume of the cube is:",
+    "options": ["8 cm³", "27 cm³", "64 cm³", "512 cm³"],
+    "answer": 2
+  },
+  {
+    "id": "NS32",
+    "text": "The radius of a hemispherical balloon increases from 6 cm to 12 cm as air is being pumped into it. The ratio of the surface areas of the balloon in the two cases is:",
+    "options": ["1:4", "1:3", "2:3", "2:1"],
+    "answer": 0
+  },
+  {
+    "id": "NS33",
+    "text": "The lateral surface area of a right circular cylinder with radius 'r' and height 'h' is:",
+    "options": ["πr²h", "2πrh", "2πr(r+h)", "πrh"],
+    "answer": 1
+  },
+  {
+    "id": "NS34",
+    "text": "The volume of a sphere of charge is 38808 cm³. Its curved surface area is:",
+    "options": ["5544 cm²", "8316 cm²", "4158 cm²", "1386 cm²"],
+    "answer": 0
+  },
+  {
+    "id": "NS35",
+    "text": "In a frequency distribution, the mid-value of a class is 10 and the width of the class is 6. The lower limit of the class is:",
+    "options": ["6", "7", "8", "12"],
+    "answer": 1
+  },
+  {
+    "id": "NS36",
+    "text": "The mean of five numbers is 30. If one number is excluded, their mean becomes 28. The excluded number is:",
+    "options": ["28", "30", "35", "38"],
+    "answer": 3
+  },
+  {
+    "id": "NS37",
+    "text": "The range of the data: 25, 18, 20, 22, 16, 6, 17, 15, 12, 30, 32, 10, 19, 8, 11, 20 is:",
+    "options": ["10", "15", "18", "26"],
+    "answer": 3
+  },
+  {
+    "id": "NS38",
+    "text": "The probability of an impossible event is:",
+    "options": ["1", "0", "0.5", "Not defined"],
+    "answer": 1
+  },
+  {
+    "id": "NS39",
+    "text": "A coin is tossed 1000 times and 455 times head is obtained. The probability of getting a tail is:",
+    "options": ["0.455", "0.545", "0.5", "1"],
+    "answer": 1
+  },
+  {
+    "id": "NS40",
+    "text": "If x + y + z = 0, then x³ + y³ + z³ is equal to:",
+    "options": ["0", "3xyz", "xy + yz + zx", "x + y + z"],
+    "answer": 1
+  },
+  {
+    "id": "NS41",
+    "text": "Every whole number is a natural number.",
+    "options": ["True", "False", "Sometimes", "None"],
+    "answer": 1
+  },
+  {
+    "id": "NS42",
+    "text": "If the base of a triangle is doubled and the corresponding height is tripled, then its area becomes:",
+    "options": ["2 times", "3 times", "6 times", "5 times"],
+    "answer": 2
+  },
+  {
+    "id": "NS43",
+    "text": "In ΔPQR, if ∠R > ∠Q, then:",
+    "options": ["QR > PR", "PQ > PR", "PQ < PR", "QR < PR"],
+    "answer": 1
+  },
+  {
+    "id": "NS44",
+    "text": "The value of 125^(-1/3) is:",
+    "options": ["5", "1/5", "25", "1/25"],
+    "answer": 1
+  },
+  {
+    "id": "NS45",
+    "text": "The coefficient of x² in 2 - x² + x³ is:",
+    "options": ["2", "1", "-1", "3"],
+    "answer": 2
+  },
+  {
+    "id": "NS46",
+    "text": "The perpendicular distance of the point P(3, 4) from the y-axis is:",
+    "options": ["3", "4", "5", "0"],
+    "answer": 0
+  },
+  {
+    "id": "NS47",
+    "text": "The equation of x-axis is:",
+    "options": ["x = 0", "y = 0", "x = y", "x + y = 0"],
+    "answer": 1
+  },
+  {
+    "id": "NS48",
+    "text": "Two figures are said to be congruent if they have the same:",
+    "options": ["Shape", "Size", "Shape and size", "Area"],
+    "answer": 2
+  },
+  {
+    "id": "NS49",
+    "text": "A diagonal of a parallelogram divides it into two congruent:",
+    "options": ["Trapeziums", "Triangles", "Rectangles", "Squares"],
+    "answer": 1
+  },
+  {
+    "id": "NS50",
+    "text": "The sum of the opposite angles of a cyclic quadrilateral is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": 1
+  }
+  {
+    "id": "NS51",
+    "text": "The area of a triangle with sides 8 cm, 11 cm and perimeter 32 cm is:",
+    "options": ["8√30 cm²", "11√30 cm²", "32√30 cm²", "4√30 cm²"],
+    "answer": 0
+  },
+  {
+    "id": "NS52",
+    "text": "The sides of a triangle are in the ratio 12 : 17 : 25 and its perimeter is 540 cm. Its area is:",
+    "options": ["1000 cm²", "5000 cm²", "9000 cm²", "8000 cm²"],
+    "answer": 2
+  },
+  {
+    "id": "NS53",
+    "text": "The length of each side of an equilateral triangle having an area of 9√3 cm² is:",
+    "options": ["3 cm", "6 cm", "9 cm", "12 cm"],
+    "answer": 1
+  },
+  {
+    "id": "NS54",
+    "text": "The base of an isosceles triangle is 12 cm and its perimeter is 32 cm. Its area is:",
+    "options": ["48 cm²", "36 cm²", "24 cm²", "60 cm²"],
+    "answer": 0
+  },
+  {
+    "id": "NS55",
+    "text": "If the radius of a cylinder is doubled and height is halved, its curved surface area will:",
+    "options": ["Be halved", "Be doubled", "Remain same", "Be four times"],
+    "answer": 2
+  },
+  {
+    "id": "NS56",
+    "text": "The total surface area of a cone whose radius is r/2 and slant height is 2l is:",
+    "options": ["2πr(l + r)", "πr(l + r/4)", "πr(l + r)", "2πrl"],
+    "answer": 1
+  },
+  {
+    "id": "NS57",
+    "text": "The radius of a sphere is 2r, then its volume will be:",
+    "options": ["4/3 πr³", "4πr³", "8/3 πr³", "32/3 πr³"],
+    "answer": 3
+  },
+  {
+    "id": "NS58",
+    "text": "If the volume of a sphere is numerically equal to its surface area, then its diameter is:",
+    "options": ["2 units", "3 units", "4 units", "6 units"],
+    "answer": 3
+  },
+  {
+    "id": "NS59",
+    "text": "A cone, a hemisphere and a cylinder stand on equal bases and have the same height. The ratio of their volumes is:",
+    "options": ["1 : 2 : 3", "2 : 1 : 3", "3 : 2 : 1", "1 : 3 : 2"],
+    "answer": 0
+  },
+  {
+    "id": "NS60",
+    "text": "The class mark of the class 130-150 is:",
+    "options": ["130", "135", "140", "150"],
+    "answer": 2
+  },
+  {
+    "id": "NS61",
+    "text": "In a cylinder, if radius is halved and height is doubled, the volume will be:",
+    "options": ["Same", "Doubled", "Halved", "Four times"],
+    "answer": 2
+  },
+  {
+    "id": "NS62",
+    "text": "The number of planks of dimensions (4m x 50cm x 20cm) that can be stored in a pit which is 16m long, 12m wide and 4m deep is:",
+    "options": ["1900", "1920", "1800", "1840"],
+    "answer": 1
+  },
+  {
+    "id": "NS63",
+    "text": "If each edge of a cube is increased by 50%, the percentage increase in surface area is:",
+    "options": ["50%", "75%", "100%", "125%"],
+    "answer": 3
+  },
+  {
+    "id": "NS64",
+    "text": "The probability of a certain event is:",
+    "options": ["0", "1", "0.5", "Between 0 and 1"],
+    "answer": 1
+  },
+  {
+    "id": "NS65",
+    "text": "In a survey of 200 ladies, it was found that 142 like coffee while 58 dislike it. The probability that a lady chosen at random dislikes coffee is:",
+    "options": ["0.31", "0.71", "0.29", "0.58"],
+    "answer": 2
+  },
+  {
+    "id": "NS66",
+    "text": "Two parallel lines are intersected by a transversal. The quadrilaterals formed by the bisectors of interior angles is a:",
+    "options": ["Square", "Rectangle", "Rhombus", "Trapezium"],
+    "answer": 1
+  },
+  {
+    "id": "NS67",
+    "text": "In ΔABC, if AB = AC and ∠B = 50°, then ∠C is:",
+    "options": ["40°", "50°", "80°", "130°"],
+    "answer": 1
+  },
+  {
+    "id": "NS68",
+    "text": "The sum of any two sides of a triangle is ____ than the third side:",
+    "options": ["Less", "Equal", "Greater", "Half"],
+    "answer": 2
+  },
+  {
+    "id": "NS69",
+    "text": "The point of intersection of the medians of a triangle is called:",
+    "options": ["Incentre", "Circumcentre", "Orthocentre", "Centroid"],
+    "answer": 3
+  },
+  {
+    "id": "NS70",
+    "text": "If the diagonals of a quadrilateral bisect each other at right angles, then it is a:",
+    "options": ["Trapezium", "Rectangle", "Rhombus", "Parallelogram"],
+    "answer": 2
+  },
+  {
+    "id": "NS71",
+    "text": "The line segment joining the mid-points of two sides of a triangle is parallel to the third side and is ___ of it:",
+    "options": ["One-third", "Half", "Equal", "Double"],
+    "answer": 1
+  },
+  {
+    "id": "NS72",
+    "text": "A circle divides the plane on which it lies into ___ parts:",
+    "options": ["2", "3", "4", "None"],
+    "answer": 1
+  },
+  {
+    "id": "NS73",
+    "text": "If a chord of a circle is equal to its radius, the angle subtended by this chord at the centre is:",
+    "options": ["30°", "45°", "60°", "90°"],
+    "answer": 2
+  },
+  {
+    "id": "NS74",
+    "text": "The area of a triangle with vertices (0,0), (6,0) and (0,5) is:",
+    "options": ["15", "30", "11", "7.5"],
+    "answer": 0
+  },
+  {
+    "id": "NS75",
+    "text": "The value of (√2 + √3 + √5)² is:",
+    "options": ["10 + 2√6 + 2√15 + 2√10", "10 + √6 + √15 + √10", "30", "10"],
+    "answer": 0
+  },
+  {
+    "id": "NS76",
+    "text": "If x + y = 12 and xy = 27, find the value of x³ + y³:",
+    "options": ["756", "1728", "810", "944"],
+    "answer": 0
+  },
+  {
+    "id": "NS77",
+    "text": "The decimal representation of 8/27 is:",
+    "options": ["Non-terminating repeating", "Terminating", "Non-terminating non-repeating", "None"],
+    "answer": 0
+  },
+  {
+    "id": "NS78",
+    "text": "If (x - 1) is a factor of x² + x + k, then k is:",
+    "options": ["2", "-2", "1", "-1"],
+    "answer": 1
+  },
+  {
+    "id": "NS79",
+    "text": "The degree of the zero polynomial is:",
+    "options": ["0", "1", "Not defined", "Any number"],
+    "answer": 2
+  },
+  {
+    "id": "NS80",
+    "text": "The linear equation 3x - 5y = 15 has:",
+    "options": ["Unique solution", "Two solutions", "Infinitely many solutions", "No solution"],
+    "answer": 2
+  },
+  {
+    "id": "NS81",
+    "text": "If the point (3, 4) lies on the graph of 3y = ax + 7, then 'a' is:",
+    "options": ["5/3", "3/5", "1", "0"],
+    "answer": 0
+  },
+  {
+    "id": "NS82",
+    "text": "An exterior angle of a triangle is equal to the sum of the two interior ___ angles:",
+    "options": ["Adjacent", "Opposite", "Right", "Acute"],
+    "answer": 1
+  },
+  {
+    "id": "NS83",
+    "text": "In a right-angled triangle, the hypotenuse is the ___ side:",
+    "options": ["Shortest", "Longest", "Middle", "Equal"],
+    "answer": 1
+  },
+  {
+    "id": "NS84",
+    "text": "The diagonal of a square is 10 cm. Its area is:",
+    "options": ["100 cm²", "50 cm²", "25 cm²", "200 cm²"],
+    "answer": 1
+  },
+  {
+    "id": "NS85",
+    "text": "The ratio of the area of a circle to the area of the square inscribed in it is:",
+    "options": ["π : 2", "2 : π", "π : 4", "π : 1"],
+    "answer": 0
+  },
+  {
+    "id": "NS86",
+    "text": "How many circles can pass through three non-collinear points?",
+    "options": ["One", "Two", "Infinite", "None"],
+    "answer": 0
+  },
+  {
+    "id": "NS87",
+    "text": "The value of 256^(0.16) × 256^(0.09) is:",
+    "options": ["4", "16", "64", "256"],
+    "answer": 0
+  },
+  {
+    "id": "NS88",
+    "text": "If x + 1/x = 5, then x² + 1/x² is:",
+    "options": ["25", "27", "23", "10"],
+    "answer": 2
+  },
+  {
+    "id": "NS89",
+    "text": "The simplest form of (1/2 + √3) is:",
+    "options": ["2 - √3", "2 + √3", "√3 - 2", "1"],
+    "answer": 0
+  },
+  {
+    "id": "NS90",
+    "text": "A triangle and a parallelogram have the same base and the same area. If the sides of the triangle are 26cm, 28cm, 30cm and the parallelogram stands on the base 28cm, the height is:",
+    "options": ["10 cm", "12 cm", "14 cm", "16 cm"],
+    "answer": 1
+  },
+  {
+    "id": "NS91",
+    "text": "The length of the longest pole that can be put in a room of dimensions 10m x 10m x 5m is:",
+    "options": ["15 m", "16 m", "10 m", "12 m"],
+    "answer": 0
+  },
+  {
+    "id": "NS92",
+    "text": "The volume of a right circular cone of height 9 cm and radius of base 7 cm is:",
+    "options": ["462 cm³", "154 cm³", "1386 cm³", "231 cm³"],
+    "answer": 0
+  },
+  {
+    "id": "NS93",
+    "text": "The surface area of a sphere of radius 10.5 cm is:",
+    "options": ["1386 cm²", "693 cm²", "4158 cm²", "2772 cm²"],
+    "answer": 0
+  },
+  {
+    "id": "NS94",
+    "text": "In a sample of 500 parts, 5 are found to be defective. The probability of a part being non-defective is:",
+    "options": ["0.01", "0.99", "0.05", "0.95"],
+    "answer": 1
+  },
+  {
+    "id": "NS95",
+    "text": "If x³ + 1 is divided by x + 1, the remainder is:",
+    "options": ["0", "1", "2", "-1"],
+    "answer": 0
+  },
+  {
+    "id": "NS96",
+    "text": "The measure of each angle of an equilateral triangle is:",
+    "options": ["30°", "45°", "60°", "90°"],
+    "answer": 2
+  },
+  {
+    "id": "NS97",
+    "text": "The sum of the angles of a triangle is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": 1
+  },
+  {
+    "id": "NS98",
+    "text": "Two circles are congruent if they have the same:",
+    "options": ["Centre", "Radius", "Chord", "Arc"],
+    "answer": 1
+  },
+  {
+    "id": "NS99",
+    "text": "The region between an arc and two radii joining the centre to the end points of the arc is called a:",
+    "options": ["Sector", "Segment", "Chord", "Semicircle"],
+    "answer": 0
+  },
+  {
+    "id": "NS100",
+    "text": "An irrational number between 2 and 2.5 is:",
+    "options": ["√11", "√5", "√3", "√8"],
+    "answer": 1
+  }
   ]
 }
