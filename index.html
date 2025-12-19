@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Babu Olympiad Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🏆 Olympiad Practice Lab</h1>
+    <div id="timer">Time: 00:00</div>
+  </header>
+
+  <main>
+    <section id="setup">
+      <h2>Test Setup</h2>
+
+      <label>
+        Questions:
+        <input type="number" id="qCount" value="10" min="5" max="20" />
+      </label>
+
+      <label>
+        Time (minutes):
+        <input type="number" id="timeLimit" value="20" min="5" max="60" />
+      </label>
+
+      <button id="startBtn">Start Test</button>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <div id="questionBox"></div>
+      <div id="options"></div>
+
+      <div class="actions">
+        <button id="skipBtn">Skip</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2>Result</h2>
+      <p id="scoreText"></p>
+      <button onclick="location.reload()">Retry</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
