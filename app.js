@@ -19,7 +19,7 @@ async function startTest() {
   const qCount = parseInt(document.getElementById("qCount").value);
   const minutes = parseInt(document.getElementById("timeLimit").value);
 
-  const res = await fetch("questions/class9_number.json");
+  const res = await fetch("questions/questions-1.json");
   const data = await res.json();
   questions = shuffle(data.questions).slice(0, qCount);
 
@@ -86,3 +86,4 @@ function formatTime(sec) {
   const s = sec % 60;
   return `Time: ${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
+
