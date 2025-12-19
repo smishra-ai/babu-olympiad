@@ -16,20 +16,37 @@ document.getElementById("nextBtn").onclick = nextQuestion;
 document.getElementById("skipBtn").onclick = skipQuestion;
 
 async function startTest() {
-  const qCount = parseInt(document.getElementById("qCount").value);
-  const minutes = parseInt(document.getElementById("timeLimit").value);
+  try {
+    const qCount = parseInt(document.getElementById("qCount").value);
+    const minutes = parseInt(document.getElementById("timeLimit").value);
 
-  const res = await fetch("questions/questions-1.json");
-  const data = await res.json();
-  questions = shuffle(data.questions).slice(0, qCount);
+    // 👇 IMPORTANT: path must match your repo
+    const res = await fetch("questions-1.json");
 
-  timeLeft = minutes * 60;
-  setupEl.classList.add("hidden");
-  quizEl.classList.remove("hidden");
+    if (!res.ok) {
+      throw new Error("Questions file not found (HTTP " + res.status + ")");
+    }
 
-  startTimer();
-  loadQuestion();
+    const data = await res.json();
+
+    if (!data.questions || !Array.isArray(data.questions)) {
+      throw new Error("Invalid JSON format");
+    }
+
+    questions = shuffle(data.questions).slice(0, qCount);
+
+    timeLeft = minutes * 60;
+    setupEl.classList.add("hidden");
+    quizEl.classList.remove("hidden");
+
+    startTimer();
+    loadQuestion();
+  } catch (err) {
+    alert("Start Test failed ❌\n\n" + err.message);
+    console.error(err);
+  }
 }
+
 
 function startTimer() {
   timerEl.textContent = formatTime(timeLeft);
@@ -86,4 +103,5 @@ function formatTime(sec) {
   const s = sec % 60;
   return `Time: ${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
+
 
